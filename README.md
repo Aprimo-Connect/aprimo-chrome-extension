@@ -20,3 +20,5 @@ While Aprimo publishes a sample version of the Chrome Extension Aprimo does not 
 
 The Aprimo Chrome Extension is open source. Customers and partners may retrieve the source and modify it as needed.
 The source code and license can be found here: https://www.github.com/Aprimo-Connect
+
+A live version is available in the Chrome Store: https://chrome.google.com/webstore/detail/hflflhncilohipagagghknojccpeffco
