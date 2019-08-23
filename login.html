@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/aprimoChromeExtension.css">
+      <link rel="stylesheet" href="css/login.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img src="images/aprimo.png" class="center mb-3">
+    <form>
+    <div id="loginArea">   
+      <div class="form-group">
+        <label for="loginId">Login ID</label>
+        <input class="form-control" id="loginId" placeholder="Enter login Id"/>
+      </div>
+      <div class="form-group">
+        <label>User Token</label>
+        <input class="form-control" id="userToken" />
+      </div>
+      <div class="form-group">
+        <label>URL</label>
+        <input class="form-control" id="url" /></div>
+        <small>Enter your Aprimo URL, such as https://companyname.aprimo.com</small>
+      <div class="form-group">
+        <label>Client ID</label>
+        <input class="form-control" id="clientId" />
+        <small>Provided by your system administrator</small>
+      </div>
+      <div>
+        <button class="btn btn-default loginBtn" type="button" id="loginBtn">Login</button>
+        <span id="loadingSpinner" class="center hidden"><img src="images/ajax-loader.gif"  /></span>
+      </div>
+      <div>
+        <span id="errorMsg" class="redText"></span>
+      </div>
+    </div>
+  </form>
+    <script src="js/login.js"></script>
+  </body>
+</html>

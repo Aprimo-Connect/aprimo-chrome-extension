@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/aprimoChromeExtension.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body style="min-width: 500px" class="task-list-pane">
+    <div id="inbox-header" class="panel panel-default inbox-header">
+      <div class="panel-body">
+        <div class="flex-justify-between">
+            
+          <span class="text">
+            Assigned & In Process
+          </span>
+          <span></span>
+          <span id="taskCount" class="badge"></span>
+        </div>
+      </div>
+    </div>
+    <div id="task-list" class="list-group task-list">
+      <span id="loadingSpinner"><img class="center" src="images/ajax-loader.gif" /></span>
+    </div>
+    <div>
+      <button id="logoutBtn" type="button" class="btn btn-default logout">Logoff</button>      
+    </div>
+    <script src="js/logger.js"></script>
+    <script src="js/tasks.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+button {
+    height: 30px;
+    width: 30px;
+    outline: none;
+  }
+
+  .assetItem {
+      color:green;
+      text-decoration: underline;
+  }
+
+  .aprimoLogo {
+    height:100%;
+    margin: 10px;
+  }
+
+#logoBar {
+  height:50px;
+}
+
+  body {
+    height: 600px;
+    width: 300px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logout {
+    width: 100%;
+    
+  }
+
+  .redText {
+    color:red;
+  }
+
+  .mb-3 {
+    margin-bottom: 10px;
+  }
+
+  .hidden
+  {
+    display:none;
+  }
+
+  /** Task pane styling **/
+
+* { font-family: 'Roboto', sans-serif;}
+
+  html {
+    height: 100%;
+  }
+  .task-list-pane {
+    background-color: rgba(79, 84, 100, 0.05);
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    height: 550px;
+    margin-top: 0;
+    top: 0;
+    
+  }
+  .task-list-pane .inbox-header {
+    height: 56px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .task-list-pane .list-group {
+    overflow-y: scroll;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    height: calc(100% - 76px);
+  }
+  .task-list-pane .list-group-item {
+    background-color: #FFFFFF;
+    font-size: 14px;
+  }
+  .task-list-pane .list-group-item.hovernow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .task-list-pane .list-group-item.hovernow:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.55);
+    background-color: white;
+    z-index: 1000;
+  }
+  .flex-justify-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .glyphicon {
+    margin-right: 8px;
+  }
+  .glyphicon-exclamation-sign.red {
+    color: red;
+  }
+  .glyphicon-ok-sign.green {
+    color: green;
+  }
+  .glyphicon-time.yellow {
+    color: orange;
+  }
+  .overflow-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .badge {
+    height: 24px;
+    width: 32px;
+    color: #FFFFFF;
+    background-color: #1E8FE1;
+    font-weight: bold;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 8px;
+  }
+  .text {
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: 0.16px;
+    line-height: 19px;
+  }
+  .key-text {
+    color: rgba(0, 0, 0, 0.9);
+    letter-spacing: 0.16px;
+    line-height: 24px;
+  }
+  .text-muted {
+    color: #7D7D7D;
+    letter-spacing: 0.16px;
+    line-height: 19px;
+  }
+  .column {
+    margin: 2px;
+    width: 50%;
+  }
+  .list-bottom {
+    margin-bottom: 8px;
+  }
+  .detail {
+    margin-top: 8px;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  
