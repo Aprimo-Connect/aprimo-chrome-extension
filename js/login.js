@@ -1,11 +1,55 @@
 chrome.browserAction.setBadgeText({"text": ''});
 var loginBtn = document.getElementById("loginBtn");
 
+var clientIdbox = document.getElementById("clientId");
+var loginIdbox = document.getElementById("loginId");
+var userTokenbox = document.getElementById("userToken");
+var urlbox = document.getElementById("url");
+
+
+chrome.storage.sync.get(["clientIdbox","loginIdbox","userTokenbox","urlbox"], function(items)
+{
+    if (items.clientIdbox != undefined)
+        clientIdbox.value = items.clientIdbox;
+    if (items.loginIdbox != undefined)
+        loginIdbox.value = items.loginIdbox;
+    if (items.userTokenbox != undefined)
+        userTokenbox.value = items.userTokenbox;
+    if (items.urlbox != undefined)
+        urlbox.value = items.urlbox;
+})
+
+clientIdbox.addEventListener("blur", function()
+{
+    chrome.storage.sync.set({ clientIdbox : clientIdbox.value }, function() {
+    });
+});
+
+loginIdbox.addEventListener("blur", function()
+{
+    chrome.storage.sync.set({ loginIdbox : loginIdbox.value }, function() {
+    });
+});
+
+userTokenbox.addEventListener("blur", function()
+{
+    chrome.storage.sync.set({ userTokenbox : userTokenbox.value }, function() {
+    });
+});
+
+urlbox.addEventListener("blur", function()
+{
+    chrome.storage.sync.set({ urlbox : urlbox.value }, function() {
+    });
+});
 
 chrome.storage.sync.get(["apr_isLoggedIn"], function(items){
     if (items.apr_isLoggedIn == true)
         window.location = "tasks.html"
 });
+
+
+
 
 loginBtn.addEventListener("click", function() {
     this.classList.add("hidden");
@@ -33,9 +77,6 @@ function GetAccessToken(url,clientId,loginId,userToken)
     xhr.setRequestHeader("client-id", clientId);
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("Authorization","Basic " + base64auth) 
-    log(clientId);
-    log(base64auth);
-    log(url);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
             
