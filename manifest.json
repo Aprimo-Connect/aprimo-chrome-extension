@@ -1,6 +1,6 @@
  {
     "name": "Aprimo",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Aprimo Chrome Extension",
     "permissions": ["declarativeContent", "storage","alarms","notifications","https://*.aprimo.com/","https://*.dam.aprimo.com/"],
     "background": {
@@ -9,7 +9,7 @@
     },
     "browser_action": {
       "default_popup": "login.html",
-      "default_title" : "Aprimo DAM Connector",
+      "default_title" : "Aprimo Chrome Extension",
       "default_icon": {
         "16": "images/a16.png",
         "32": "images/a32.png",
