@@ -19,7 +19,7 @@ var activityJSON;
 // Set up the logout button. When it's clicked, we simply clear values from chrome storage and bump them back to the login page.
 var logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", function() {
-    chrome.storage.sync.set({ apr_loginId : '', apr_userToken : '', apr_url: '', apr_clientId : '', apr_isLoggedIn : false }, function() {
+    chrome.storage.sync.clear(function() {
         window.location = "login.html";
     });
     return false;
